@@ -1,0 +1,28 @@
+name:                finite-domain-function
+version:             0.1.0.0
+synopsis:            Functions and instances for serializing functions with a finite domain
+description:         Please see README.md
+homepage:            https://github.com/andrewthad/finite-domain-function#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Andrew Martin
+maintainer:          andrew.thaddeus@gmail.com
+copyright:           2016 Andrew Martin
+category:            web
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Data.Function.Finite
+  build-depends:       
+      base >= 4.7 && < 5
+    , vector
+    , unordered-containers
+    , aeson
+    , text
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/andrewthad/finite-domain-function
